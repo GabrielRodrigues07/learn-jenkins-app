@@ -20,5 +20,20 @@ pipeline {
                 '''
             }
         }
+
+        stage('Test') {
+            agent {
+                reuseNode true
+            }
+            steps {
+                sh '''
+                    echo "First Test"
+                    test build/index.html
+
+                    echo "Second Test"
+                    npm test
+                '''
+            }
+        }
     }
 }
