@@ -106,7 +106,7 @@ pipeline {
             }
 
             environment {
-                CI_ENVIRONMENT_URL = 'https://courageous-maamoul-7236e.netlify.app'
+                CI_ENVIRONMENT_URL = 'https://courageous-maamoul-7236ec.netlify.app'
             }
 
             steps {
