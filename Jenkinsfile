@@ -61,6 +61,7 @@ pipeline {
                         }
                     }
                     steps {
+                        echo 'Start E2E Test'
                         sh '''
                             npm install serve
                             node_modules/.bin/serve -s build &
